@@ -86,7 +86,9 @@ ___________________
 ______________
 生成后的机柜图,通过HTML可以查看,如下所示
 
-1. 机柜编号::
+1. 机柜编号
+
+::
 
  <tr><td class="jgtable" ......>
          <font class="jgtitle"><p>A1</p></font></td>
@@ -97,7 +99,9 @@ ______________
          <font class="jgtitle"><p>A9</p></font></td>
  </tr>
 
-2. 机柜上的的导轨编号::
+2. 机柜上的的导轨编号
+
+::
 
  .......
  <tr><td class='jgtable' align='center' height='8' valign='bottom' id='4'></td></tr>

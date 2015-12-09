@@ -56,6 +56,7 @@ Table Of Contents
    usage
    stylesheet
    future
+   support
    author
    changelog
 
