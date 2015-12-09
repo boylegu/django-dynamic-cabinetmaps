@@ -3,7 +3,7 @@ Django-Dynamic-Cabinet Maps
 
 [![versions](https://img.shields.io/badge/python-2.7-yellow.svg)]()
 [![versions](https://img.shields.io/badge/Development%20Status-0.1.dev1-orange.svg)]()
-[![versions](https://img.shields.io/wercker/ci/wercker/docs.svg)]()
+[![Documentation Status](https://readthedocs.org/projects/django-dynamic-cabinetmaps/badge/?version=v0.1.dev1)]()
 
 一个轻量级、用于Django框架下的“动态生成机柜图”工具
 
