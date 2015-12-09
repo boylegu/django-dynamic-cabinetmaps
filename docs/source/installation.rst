@@ -16,12 +16,15 @@ Requirements
 Setup
 ===============
 
-1. 通过pip进行安装 ::
+1. 通过pip进行安装
+
+::
 
    pip install django-dynamic-cabinetmaps
 
-2. 在settings.py进行添加 ::
+2. 在settings.py进行添加
 
+::
 
    INSTALLED_APPS = (
     ......
@@ -31,4 +34,4 @@ Setup
     ......
    )
 
-3. 安装好之后,需要通过一些配置,详情请看'Usage'.
+3. 安装好之后,需要通过一些配置,详情请看``Usage``章节.

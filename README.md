@@ -3,6 +3,7 @@ Django-Dynamic-Cabinet Maps
 
 [![versions](https://img.shields.io/badge/python-2.7-yellow.svg)]()
 [![versions](https://img.shields.io/badge/Development%20Status-0.1.dev1-orange.svg)]()
+[![versions](https://img.shields.io/wercker/ci/wercker/docs.svg)]()
 
 一个轻量级、用于Django框架下的“动态生成机柜图”工具
 
@@ -71,9 +72,21 @@ Django-Dynamic-Cabinet Maps
     )
    ```
 
+## Demo
+
+1. 从git上克隆 https://github.com/boylegu/django-dynamic-cabinetmaps.git
+
+2. 然后进入``demoapp``
+
+3. ``python manage runserver``
+
+
+  >> 目前demo是需要django 1.6运行
+
+
 ## Usage
 
-详细可以查看[文档](http://django-dynamic-cabinetmaps.readthedocs.org).
+详细使用帮助,可以查看[文档](http://django-dynamic-cabinetmaps.readthedocs.org).
 
 ## Future
 
@@ -83,6 +96,11 @@ Django-Dynamic-Cabinet Maps
 - 机柜编号可支持反转.
 - 增加服务器数据渲染的API
 - 支持机柜分页
+
+## Support
+
+  如果你有任何意见和交流可以直接通过GitHub或者加QQ讨论群:`315308272`与我交流
+  
 
 ## Authors
 
