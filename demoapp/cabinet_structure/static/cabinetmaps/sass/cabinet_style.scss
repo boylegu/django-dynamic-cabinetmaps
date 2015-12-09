@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+$defalut-values: 0px;
+
+@mixin cartoon-twinkle {
+
+  0% {
+    opacity: 0;
+
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.jjtable {
+
+  transform: translate(0px, - 50 px) scale(1, 0.9);
+
+}
+
+h1 {
+  background-color: floralwhite;
+
+  border: {
+    top: 25px;
+    bottom: 25px;
+    right: 50px;
+    left: 50px;
+
+  }
+;
+
+  color: gray;
+  text-align: center;
+
+}
+
+.jgtable {
+
+  border: {
+
+    top-width: $defalut-values;
+    right-width: $defalut-values;
+    bottom-width: 1px;
+    left-width: $defalut-values;
+    bottom-style: solid;
+    bottom-color: #999999;
+
+  }
+
+}
+
+.jgtitle {
+
+  p {
+    color: gray;
+
+    font-weight: bold;
+
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -43px;
+    margin-top: 50px
+
+  }
+
+}
+
+
+a {
+
+  position: relative;
+  display: inline-block;
+}
+
+@-webkit-keyframes twinkling {
+
+  @include cartoon-twinkle;
+
+}
+
+@keyframes twinkling {
+
+  @include cartoon-twinkle;
+}
+
+@for $i from 1 to 100 {
+
+  .j#{$i} {
+
+    position: relative;
+
+    @for $j from 1 to 42 {
+
+      .s#{$j} {
+
+        &:before {
+          position: absolute;
+          content: ' ';
+          top: 15px;
+          left: 130px;
+          width: 8px;
+          height: 8px;
+          background: green;
+
+          -moz-border-radius: 50px;
+          -webkit-border-radius: 50px;
+          -webkit-animation: twinkling 0.2s infinite ease-in-out;
+
+        }
+
+      }
+
+    }
+
+  }
+}

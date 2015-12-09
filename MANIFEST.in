@@ -1,0 +1,6 @@
+include LICENSE
+include README.md
+
+recursive-include cabinet_structure/static *
+recursive-include cabinet_structure/utils *
+recursive-include docs *

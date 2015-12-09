@@ -1,0 +1,40 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link href="{% static 'cabinetmaps/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'cabinetmaps/css/cabinet_style.css' %}">
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+    <h1>IDC机柜分布图</h1>
+
+
+    <div class="table-responsive">
+        {{ cabinet_data }}
+
+    </div>
+
+
+</div>
+
+
+</body>
+
+<script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+
+<script src="{% static 'cabinetmaps/js/bootstrap.min.js' %}"></script>
+<script type="text/javascript">
+
+
+</script>
+</html>
