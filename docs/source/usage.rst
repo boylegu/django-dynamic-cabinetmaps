@@ -88,6 +88,8 @@ ______________
 
 1. 机柜编号
 
+下面html示例中,假设类``jgtitle``下的``<p>``里标注的A1......即为``机柜编号``
+
 ::
 
  <tr><td class="jgtable" ......>
@@ -100,6 +102,8 @@ ______________
  </tr>
 
 2. 机柜上的的导轨编号
+
+下面html示例中,假设类``jgtable``下的``<id>``里标注的信息,如``id=4``, ``id=12``即为``机柜的导轨编号``
 
 ::
 
@@ -120,7 +124,14 @@ Settings
 
    :default: ``6``
 
-   用于指定页面每行中显示多少个机柜::
+   用于指定页面每行中显示多少个机柜
+
+example
+_______
+
+假设指定页面每行显示7个机柜
+
+::
 
       # in settings.py
 
@@ -138,7 +149,9 @@ Demo
 
 2. 然后进入``demoapp``
 
-3. ``python manage runserver``
+3. ``python manage.py runserver``
+
+4. 通过浏览器访问``http://127.0.0.1:8000/cabinetmaps/``
 
 .. note::
   目前demo是需要django 1.6运行

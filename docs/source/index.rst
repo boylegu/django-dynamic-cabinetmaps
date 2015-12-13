@@ -36,9 +36,17 @@ Introduction
 
   - 默认可支持100个机柜(通过定制可以更大0_0)
 
+.. warning::
+
+  开发版本暂时不支持ie内核, Chrome/\Firefox/\Safair都支持.
+
+
+未来版本可定制效果图的例子
+==========================
 
 .. _fig_0601:
 .. figure:: http://i12.tietuku.com/cda41482624415f4.png
+
 
 Versions
 =================
