@@ -14,7 +14,7 @@ with open(os.path.join(os.path.dirname(__file__), 'README.md')) as readme:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='django-dynamic_cabinetmaps',
+    name='django-dynamic-cabinetmaps',
     version=__version__,
     packages=['cabinet_structure'],
     include_package_data=True,
@@ -25,7 +25,6 @@ setup(
     author='BoyleGu',
     author_email='gubaoer@hotmail.com',
     classifiers=[
-        'Development Status :: 1 - Beta',
         'Environment :: Web Environment',
         'Framework :: Django',
         'Framework :: Django :: 1.6',
