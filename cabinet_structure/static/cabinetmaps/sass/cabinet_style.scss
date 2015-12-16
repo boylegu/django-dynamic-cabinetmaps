@@ -2,23 +2,7 @@
 
 $defalut-values: 0px;
 
-@mixin cartoon-twinkle {
-
-  0% {
-    opacity: 0;
-
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.jjtable {
-
-  transform: translate(0px, - 50 px) scale(1, 0.9);
-
-}
-
+// demo style
 h1 {
   background-color: floralwhite;
 
@@ -34,40 +18,65 @@ h1 {
   color: gray;
   text-align: center;
 
+} // end demo
+
+
+
+@mixin cartoon-twinkle {
+
+  0% {
+    opacity: 0;
+
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.jgtable {
+// 整个机柜图样式
+.cabinets {
 
-  border: {
+  transform: translate(0px, - 50 px) scale(1, 0.9);
 
-    top-width: $defalut-values;
-    right-width: $defalut-values;
-    bottom-width: 1px;
-    left-width: $defalut-values;
-    bottom-style: solid;
-    bottom-color: #999999;
+  // 导轨样式
+  .rack {
+
+    border: {
+
+      top-width: $defalut-values;
+      right-width: $defalut-values;
+      bottom-width: 1px;
+      left-width: $defalut-values;
+      bottom-style: solid;
+      bottom-color: #999999;
+
+    }
 
   }
 
-}
+  // 每个机柜主题
+  .rack-title {
 
-.jgtitle {
+    p {
+      color: gray;
 
-  p {
-    color: gray;
+      font-weight: bold;
 
-    font-weight: bold;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: -43px;
+      margin-top: 50px
 
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: -43px;
-    margin-top: 50px
+    }
 
   }
 
-}
+} // cabinets  end
 
+
+
+// 下面是都是为之后的数据渲染做准备,未来的版本中再修改
 
 a {
 
@@ -88,7 +97,7 @@ a {
 
 @for $i from 1 to 100 {
 
-  .j#{$i} {
+  .cabinet-#{$i} {
 
     position: relative;
 
