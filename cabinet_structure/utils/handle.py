@@ -17,7 +17,7 @@ class HTMLRenderTemplate(object):
 
     @property
     def cabinet_structure_template(self):
-        structure = "<table class='table jjtable'><tbody><tr>{0}</tr></tbody></table>"
+        structure = "<table class='table cabinets'><tbody><tr>{0}</tr></tbody></table>"
         return structure
 
     @property
@@ -37,10 +37,9 @@ class HTMLRenderTemplate(object):
         """
         cabinet_cells_template = """
                             <td style="background-image:url('/static/cabinetmaps/img/idc-rack-42u.gif')" bgcolor="#eeeeee" width="200">
-                            <table class='j{0}' border="0" cellpadding="1" cellspacing="0" height="980" align="center"
-                            width="70%" id='A{0}'>
-                            <tbody><tr><td class="jgtable" align="center" height="8" valign="bottom">
-                            <font class="jgtitle"><p>A{0}</p></font></td>
+                            <table class='cabinet-{0}' cellpadding="1" cellspacing="0" align="center" id='A{0}'>
+                            <tbody><tr><td class="rack" align="center" valign="bottom">
+                            <font class="rack-title"><p>A{0}</p></font></td>
                             </tr>{1}</tbody>
                             </table></td>
                               """
@@ -53,7 +52,7 @@ class HTMLRenderTemplate(object):
         :return:
         """
         rack_structure_template = """
-        <tr><td class='jgtable' align='center' height='8' valign='bottom' id='{0}'></td></tr>
+        <tr><td class='rack' align='center' valign='bottom' id='{0}'></td></tr>
         """
         return rack_structure_template
 

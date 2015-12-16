@@ -88,29 +88,29 @@ ______________
 
 1. 机柜编号
 
-下面html示例中,假设类``jgtitle``下的``<p>``里标注的A1......即为``机柜编号``
+下面html示例中,假设类``rack-title``下的``<p>``里标注的A1......即为``机柜编号``
 
 ::
 
- <tr><td class="jgtable" ......>
-         <font class="jgtitle"><p>A1</p></font></td>
+ <tr><td class="rack" ......>
+         <font class="rack-title"><p>A1</p></font></td>
  </tr>
  ......
 
- <tr><td class="jgtable" ......>
-         <font class="jgtitle"><p>A9</p></font></td>
+ <tr><td class="rack" ......>
+         <font class="rack-title"><p>A9</p></font></td>
  </tr>
 
 2. 机柜上的的导轨编号
 
-下面html示例中,假设类``jgtable``下的``<id>``里标注的信息,如``id=4``, ``id=12``即为``机柜的导轨编号``
+下面html示例中,假设类``rack``下的``<id>``里标注的信息,如``id=4``, ``id=12``即为``机柜的导轨编号``
 
 ::
 
  .......
- <tr><td class='jgtable' align='center' height='8' valign='bottom' id='4'></td></tr>
+ <tr><td class='rack' align='center' valign='bottom' id='4'></td></tr>
  .......
- <tr><td class='jgtable' align='center' height='8' valign='bottom' id='12'></td></tr>
+ <tr><td class='rack' align='center' valign='bottom' id='12'></td></tr>
 
 .. note::
   在之后的版本中,对于机柜编号的定制会得到加强,并提供数据填充的API.

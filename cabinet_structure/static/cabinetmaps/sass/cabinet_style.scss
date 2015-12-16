@@ -1,8 +1,6 @@
 @charset "utf-8";
 
-$defalut-values: 0px;
-
-// demo style
+// Demo style
 h1 {
   background-color: floralwhite;
 
@@ -14,13 +12,12 @@ h1 {
 
   }
 ;
-
   color: gray;
   text-align: center;
 
-} // end demo
+}
 
-
+$defalut-values: 0px;
 
 @mixin cartoon-twinkle {
 
@@ -31,57 +28,6 @@ h1 {
   100% {
     opacity: 1;
   }
-}
-
-// 整个机柜图样式
-.cabinets {
-
-  transform: translate(0px, - 50 px) scale(1, 0.9);
-
-  // 导轨样式
-  .rack {
-
-    border: {
-
-      top-width: $defalut-values;
-      right-width: $defalut-values;
-      bottom-width: 1px;
-      left-width: $defalut-values;
-      bottom-style: solid;
-      bottom-color: #999999;
-
-    }
-
-  }
-
-  // 每个机柜主题
-  .rack-title {
-
-    p {
-      color: gray;
-
-      font-weight: bold;
-
-      width: 100px;
-      height: 100px;
-      position: absolute;
-      top: -43px;
-      margin-top: 50px
-
-    }
-
-  }
-
-} // cabinets  end
-
-
-
-// 下面是都是为之后的数据渲染做准备,未来的版本中再修改
-
-a {
-
-  position: relative;
-  display: inline-block;
 }
 
 @-webkit-keyframes twinkling {
@@ -95,34 +41,85 @@ a {
   @include cartoon-twinkle;
 }
 
-@for $i from 1 to 100 {
+// 整个机柜图样式
+.cabinets {
 
-  .cabinet-#{$i} {
+  transform: translate(0px, - 50 px) scale(1, 0.9);
 
-    position: relative;
+  @for $cabinet_counts from 1 to 100 {
 
-    @for $j from 1 to 42 {
+    .cabinet-#{$cabinet_counts} {
 
-      .s#{$j} {
+      position: relative;
+      height: 980px;
+      width: 70%;
 
-        &:before {
+      .rack-title {
+
+        p {
+          color: gray;
+
+          font-weight: bold;
+
+          width: 100px;
+          height: 100px;
           position: absolute;
-          content: ' ';
-          top: 15px;
-          left: 130px;
-          width: 8px;
-          height: 8px;
-          background: green;
+          top: -43px;
+          margin-top: 50px
 
-          -moz-border-radius: 50px;
-          -webkit-border-radius: 50px;
-          -webkit-animation: twinkling 0.2s infinite ease-in-out;
+        }
+
+      }
+
+      .rack {
+
+        height: 8px;
+
+        border: {
+
+          top-width: $defalut-values;
+          right-width: $defalut-values;
+          bottom-width: 1px;
+          left-width: $defalut-values;
+          bottom-style: solid;
+          bottom-color: #999999;
+
+        }
+
+        a {
+
+          position: relative;
+          display: inline-block;
+        }
+
+      }
+
+      @for $rack_counts from 1 to 42 {
+
+        .s#{$rack_counts} {
+
+          &:before {
+            position: absolute;
+            content: ' ';
+            top: 15px;
+            left: 130px;
+            width: 8px;
+            height: 8px;
+            background: green;
+
+            -moz-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            -webkit-animation: twinkling 0.2s infinite ease-in-out;
+
+          }
 
         }
 
       }
 
     }
-
   }
+
 }
+
+
