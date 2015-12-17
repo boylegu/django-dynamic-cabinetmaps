@@ -2,8 +2,8 @@ Django-Dynamic-Cabinet Maps
 ====
 
 [![versions](https://img.shields.io/badge/python-2.7-yellow.svg)]()
-[![versions](https://img.shields.io/badge/Development%20Status-0.1.dev1-orange.svg)]()
-[![Documentation Status](https://readthedocs.org/projects/django-dynamic-cabinetmaps/badge/?version=v0.1.dev2)]()
+[![versions](https://img.shields.io/badge/Development%20Status-0.1.dev2-orange.svg)]()
+[![Documentation Status](https://readthedocs.org/projects/django-dynamic-cabinetmaps/badge/?version=v0.1.dev2)](http://django-dynamic-cabinetmaps.readthedocs.org/en/v0.1.dev2/?badge=v0.1.dev2)
 
 一个轻量级、用于Django框架下的“动态生成机柜图”工具
 
@@ -87,9 +87,9 @@ Django-Dynamic-Cabinet Maps
   >> 目前demo是需要django 1.6运行
 
 
-## Usage
+## Usage & Documentation
 
-详细使用帮助,可以查看[文档](http://django-dynamic-cabinetmaps.readthedocs.org).
+详细使用帮助,可以查看[文档](http://django-dynamic-cabinetmaps.readthedocs.org/en/latest/).
 
 ## Future
 

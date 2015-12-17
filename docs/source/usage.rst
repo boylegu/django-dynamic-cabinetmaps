@@ -88,7 +88,7 @@ ______________
 
 1. 机柜编号
 
-下面html示例中,假设类``rack-title``下的``<p>``里标注的A1......即为``机柜编号``
+下面html示例中,假设类 ``rack-title`` 下的 ``<p>`` 里标注的A1......即为 ``机柜编号``
 
 ::
 
@@ -103,7 +103,7 @@ ______________
 
 2. 机柜上的的导轨编号
 
-下面html示例中,假设类``rack``下的``<id>``里标注的信息,如``id=4``, ``id=12``即为``机柜的导轨编号``
+下面html示例中,假设类 ``rack`` 下的 ``<id>`` 里标注的信息,如 ``id=4`` , ``id=12`` 即为 ``机柜的导轨编号``
 
 ::
 
@@ -147,11 +147,11 @@ Demo
 
 1. 从git上克隆 https://github.com/boylegu/django-dynamic-cabinetmaps.git
 
-2. 然后进入``demoapp``
+2. 然后进入 ``demoapp``
 
 3. ``python manage.py runserver``
 
-4. 通过浏览器访问``http://127.0.0.1:8000/cabinetmaps/``
+4. 通过浏览器访问 ``http://127.0.0.1:8000/cabinetmaps/``
 
 .. note::
   目前demo是需要django 1.6运行
