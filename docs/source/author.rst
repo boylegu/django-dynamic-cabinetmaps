@@ -12,6 +12,6 @@
 
     后来受国家号召辗转电商行业,目前在某世界五百强企业担任'高级Python开发';
 
-    业余时间在交大慧谷和博学教育担任'Python开发课程'讲师, 在这里也分享一下我制作的`教学课件 <https://github.com/boylegu/Training-Lecture>`_
+    业余时间也会经常刷刷豆瓣``http://www.douban.com/people/130165068/``
 
     想一起交流的可以给我发邮件``gubaoer@hotmail.com``
