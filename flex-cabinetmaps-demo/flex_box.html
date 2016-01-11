@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+
+        该页面主要是让整个机柜图更适合手机进行访问,加强自适应功能等.
+
+        这是一个带有实验性的项目,主要希望通过w3c最新标准的css3技术'Flex Box'来构建机柜图, 但从目前研究来看,
+         即使通过compass重新编译,依然对各个浏览器的兼容性相当的差,要想普及,看来得再等四,五年.
+
+         —————— Author: 顾鲍尔
+    -->
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        .flex-container {
+            padding: 0;
+            margin: 0;
+
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+
+            -webkit-flex-flow: row wrap;
+            -moz-flex-flow: row wrap;
+            justify-content: space-around;
+        }
+
+        .flex-item {
+            background-image: url("idc-rack-42u.gif");
+            width: 198px;
+            height: 980px;
+        }
+
+        .rTableCell {
+            border-top-width: 0px;
+            border-right-width: 0px;
+            border-bottom-width: 1px;
+            border-left-width: 0px;
+            border-bottom-style: solid;
+            border-bottom-color: #999999;
+            height: 30px;
+            position: relative;
+        }
+
+        .rTableCell p {
+
+            position: absolute;
+            bottom: -20px;
+            right: 90px;
+
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="flex-container">
+    <div class="flex-item">
+
+        <div class="rTableCell"><p>01</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+
+
+    </div>
+    <div class="flex-item">
+
+        <div class="rTableCell"><p>02</p></div>
+        <div class="rTableCell"><p>dd</p></div>
+
+    </div>
+
+    <div class="flex-item">
+        <div class="rTableCell"><p>03</p></div>
+    </div>
+    <div class="flex-item">
+        <div class="rTableCell"><p>04</p></div>
+    </div>
+    <div class="flex-item">
+        <div class="rTableCell"><p>05</p></div>
+    </div>
+    <div class="flex-item">
+        <div class="rTableCell"><p>06</p></div>
+    </div>
+    <div class="flex-item">
+        <div class="rTableCell"><p>07</p></div>
+    </div>
+    <div class="flex-item">
+        <div class="rTableCell"><p>08</p></div>
+    </div>
+    <div class="flex-item">
+        <div class="rTableCell"><p>09</p></div>
+    </div>
+</div>
+
+</body>
+</html>
